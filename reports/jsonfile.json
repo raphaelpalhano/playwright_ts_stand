@@ -1,0 +1,1090 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\playwright.config.ts",
+    "rootDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3,
+      "totalTime": 24821.02799999714
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/jsonfile.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFile": "reports/"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/rapha/projects/playwright-stander-ts/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "stage",
+        "name": "stage",
+        "testDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.spec\\.ts/"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "C:/Users/rapha/projects/playwright-stander-ts/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.spec\\.ts/"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "C:/Users/rapha/projects/playwright-stander-ts/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.spec\\.ts/"
+        ],
+        "timeout": 20000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.36.2",
+    "workers": 3,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo-todo-app.spec.ts",
+      "file": "demo-todo-app.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "New Todo",
+          "file": "demo-todo-app.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should allow me to add todo items",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3375,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:36.015Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-New-Todo-should-allow-me-to-add-todo-items-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-815f784d1e5499ead55d",
+              "file": "demo-todo-app.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "should clear text input field when an item is added",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 3099,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:35.972Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-New-Todo-should-clear-text-input-field-when-an-item-is-added-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-6356abd25f963a34adef",
+              "file": "demo-todo-app.spec.ts",
+              "line": 40,
+              "column": 7
+            },
+            {
+              "title": "should append new items to the bottom of the list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 3331,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:36.045Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-New-Todo-should-append-new-items-to-the-bottom-of-the-list-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-d6437ff2be0814fe890b",
+              "file": "demo-todo-app.spec.ts",
+              "line": 53,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Mark all as completed",
+          "file": "demo-todo-app.spec.ts",
+          "line": 72,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should allow me to mark all items as completed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 1759,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:41.224Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Mark-all-as-completed-should-allow-me-to-mark-all-items-as-completed-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-5a8119cea5721478b193",
+              "file": "demo-todo-app.spec.ts",
+              "line": 82,
+              "column": 7
+            },
+            {
+              "title": "should allow me to clear the complete state of all items",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3166,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:41.441Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Mark-all-as-completed-should-allow-me-to-clear-the-complete-state-of-all-items-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-316d77371349fd41af79",
+              "file": "demo-todo-app.spec.ts",
+              "line": 91,
+              "column": 7
+            },
+            {
+              "title": "complete all checkbox should update state when items are completed / cleared",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 3822,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:41.625Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Mark-all-as-completed-complete-a-f0803-d-update-state-when-items-are-completed-cleared-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-45b54f81bdea7925996d",
+              "file": "demo-todo-app.spec.ts",
+              "line": 101,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Item",
+          "file": "demo-todo-app.spec.ts",
+          "line": 122,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should allow me to mark items as complete",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 2776,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:42.990Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Item-should-allow-me-to-mark-items-as-complete-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-e7fa5c80b1e4b51cc6dc",
+              "file": "demo-todo-app.spec.ts",
+              "line": 124,
+              "column": 7
+            },
+            {
+              "title": "should allow me to un-mark items as complete",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 2859,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:44.613Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Item-should-allow-me-to-un-mark-items-as-complete-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-ed92d3eca17c8b0c27e7",
+              "file": "demo-todo-app.spec.ts",
+              "line": 149,
+              "column": 7
+            },
+            {
+              "title": "should allow me to edit an item",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 2589,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:45.459Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Item-should-allow-me-to-edit-an-item-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-c3a17cb31648ce87c297",
+              "file": "demo-todo-app.spec.ts",
+              "line": 174,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Editing",
+          "file": "demo-todo-app.spec.ts",
+          "line": 194,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should hide other controls when editing",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 2335,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:45.771Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Editing-should-hide-other-controls-when-editing-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-8f6cdb979d38f289ea94",
+              "file": "demo-todo-app.spec.ts",
+              "line": 200,
+              "column": 7
+            },
+            {
+              "title": "should save edits on blur",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 1828,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:47.477Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Editing-should-save-edits-on-blur-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-06f965b273ed0e1b477f",
+              "file": "demo-todo-app.spec.ts",
+              "line": 210,
+              "column": 7
+            },
+            {
+              "title": "should trim entered text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 2258,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:48.093Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Editing-should-trim-entered-text-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-ba6787e1e533cff03c71",
+              "file": "demo-todo-app.spec.ts",
+              "line": 224,
+              "column": 7
+            },
+            {
+              "title": "should remove the item if an empty text string was entered",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 2105,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:48.132Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Editing-should-remove-the-item-if-an-empty-text-string-was-entered-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-48d9c1d3a7a3625baaf9",
+              "file": "demo-todo-app.spec.ts",
+              "line": 238,
+              "column": 7
+            },
+            {
+              "title": "should cancel edits on escape",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 1903,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:49.310Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Editing-should-cancel-edits-on-escape-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-117a07387f80092b7a74",
+              "file": "demo-todo-app.spec.ts",
+              "line": 250,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Counter",
+          "file": "demo-todo-app.spec.ts",
+          "line": 259,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display the current number of todo items",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 1677,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:50.242Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Counter-should-display-the-current-number-of-todo-items-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-263537f933b54a5da4da",
+              "file": "demo-todo-app.spec.ts",
+              "line": 260,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Clear completed button",
+          "file": "demo-todo-app.spec.ts",
+          "line": 280,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display the correct text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 2124,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:50.355Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Clear-completed-button-should-display-the-correct-text-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-94e54552093d0f7172bc",
+              "file": "demo-todo-app.spec.ts",
+              "line": 285,
+              "column": 7
+            },
+            {
+              "title": "should remove completed items when clicked",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 1940,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:51.218Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Clear-completed-button-should-remove-completed-items-when-clicked-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-cde232687cc9d38b544c",
+              "file": "demo-todo-app.spec.ts",
+              "line": 290,
+              "column": 7
+            },
+            {
+              "title": "should be hidden when there are no items that are completed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 1997,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:51.923Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Clear-completed-button-should-be-hidden-when-there-are-no-items-that-are-completed-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-e74963fe279deadc875a",
+              "file": "demo-todo-app.spec.ts",
+              "line": 298,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Persistence",
+          "file": "demo-todo-app.spec.ts",
+          "line": 305,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should persist its data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 2560,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:52.483Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Persistence-should-persist-its-data-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-466cae639f093c9a690d",
+              "file": "demo-todo-app.spec.ts",
+              "line": 306,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Routing",
+          "file": "demo-todo-app.spec.ts",
+          "line": 333,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should allow me to display active items",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 2526,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:53.167Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Routing-should-allow-me-to-display-active-items-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-4dedb7ddc9e48367d062",
+              "file": "demo-todo-app.spec.ts",
+              "line": 342,
+              "column": 7
+            },
+            {
+              "title": "should respect the back button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 4183,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Showing all items",
+                          "duration": 229
+                        },
+                        {
+                          "title": "Showing active items",
+                          "duration": 273
+                        },
+                        {
+                          "title": "Showing completed items",
+                          "duration": 318
+                        }
+                      ],
+                      "startTime": "2023-08-04T00:51:53.933Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Routing-should-respect-the-back-button-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-c997aad18fb1eeb096a2",
+              "file": "demo-todo-app.spec.ts",
+              "line": 352,
+              "column": 7
+            },
+            {
+              "title": "should allow me to display completed items",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 2758,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:55.049Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Routing-should-allow-me-to-display-completed-items-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-ba33ed66deafb4607e3b",
+              "file": "demo-todo-app.spec.ts",
+              "line": 378,
+              "column": 7
+            },
+            {
+              "title": "should allow me to display all items",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 2840,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:55.709Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Routing-should-allow-me-to-display-all-items-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-2c24187fd81b0f5f1b49",
+              "file": "demo-todo-app.spec.ts",
+              "line": 385,
+              "column": 7
+            },
+            {
+              "title": "should highlight the currently applied filter",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 20000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "stage",
+                  "projectName": "stage",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 1587,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-08-04T00:51:57.811Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\demo-todo-app-Routing-should-highlight-the-currently-applied-filter-stage\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "849da1cee0c412ce5534-f77c69a72c6667842508",
+              "file": "demo-todo-app.spec.ts",
+              "line": 394,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

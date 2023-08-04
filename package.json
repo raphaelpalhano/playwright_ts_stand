@@ -1,0 +1,25 @@
+{
+  "name": "playwright-stander-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ui": "npx playwright test --ui --project=stage",
+    "headless": "npx playwright test --project=stage",
+    "generate:report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.36.2",
+    "@types/node": "^20.4.5",
+    "@typescript-eslint/parser": "^6.2.1",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.46.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-playwright": "^0.15.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
