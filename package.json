@@ -6,7 +6,9 @@
   "scripts": {
     "ui": "npx playwright test --ui --project=stage",
     "headless": "npx playwright test --project=stage",
-    "generate:report": "npx playwright show-report"
+    "generate:report": "npx playwright show-report",
+    "codeGen": "npx playwright codegen",
+    "debug": "npx playwright test --debug --project=stage"
   },
   "keywords": [],
   "author": "",
