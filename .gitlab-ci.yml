@@ -25,7 +25,8 @@ gui-test:
   image:  mcr.microsoft.com/playwright:v1.37.0-jammy
   only:
     - master
-  script:  
+  script: 
+    - npx playwright install 
     - npm ci
     - npx playwright test tests/specs --project=stage
   artifacts:
