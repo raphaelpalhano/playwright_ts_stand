@@ -9,8 +9,8 @@ stages:
   image: node:latest
   when: manual
   script:
+    - npx playwright install          
     - npm ci
-    - npx playwright install
     - npx playwright test tests/specs$TEST_FILE --project=stage
 
 
@@ -25,9 +25,9 @@ gui-test:
   image: node:latest
   only:
     - master
-  script: 
+  script:
+    - npx playwright install          
     - npm ci
-     - npx playwright install 
     - npx playwright test tests/specs --project=stage
   artifacts:
     expire_in: 30 days
