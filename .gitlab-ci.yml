@@ -1,0 +1,38 @@
+
+stages:
+  - test
+  - build
+
+
+.playwright_job:
+  stage: test
+  image:  mcr.microsoft.com/playwright:v1.37.0-jammy
+  when: manual
+  script:
+    - npm ci
+    - npx playwright test tests/specs$TEST_FILE --project=stage
+
+
+gui-test-all:
+  extends:
+  - .playwright_job
+  variables:
+    TEST_FILE: /
+
+gui-test:
+  stage: test
+  image:  mcr.microsoft.com/playwright:v1.37.0-jammy
+  only:
+    - master
+  script:  
+    - npm ci
+    - npx playwright test tests/specs$TEST_FILE --project=stage
+  artifacts:
+    expire_in: 30 days
+    when: always
+    paths:
+      - reports
+
+
+
+

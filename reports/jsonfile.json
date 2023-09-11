@@ -11,8 +11,8 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 16110.528999999166,
-      "actualWorkers": 1
+      "actualWorkers": 1,
+      "totalTime": 38964.09700000286
     },
     "preserveOutput": "always",
     "reporter": [
@@ -42,7 +42,7 @@
       {
         "outputDir": "C:/Users/rapha/projects/playwright-stander-ts/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "id": "stage",
         "name": "stage",
         "testDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
@@ -55,7 +55,7 @@
       {
         "outputDir": "C:/Users/rapha/projects/playwright-stander-ts/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "id": "firefox",
         "name": "firefox",
         "testDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
@@ -68,7 +68,7 @@
       {
         "outputDir": "C:/Users/rapha/projects/playwright-stander-ts/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "id": "webkit",
         "name": "webkit",
         "testDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
@@ -112,21 +112,15 @@
                   "projectName": "stage",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 13968,
+                      "duration": 17417,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-08-20T05:28:20.534Z",
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\test-results\\barriga-react-Access-Account-test-stage\\trace.zip"
-                        }
-                      ]
+                      "startTime": "2023-09-11T16:22:34.311Z",
+                      "attachments": []
                     }
                   ],
                   "status": "expected"
