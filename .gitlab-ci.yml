@@ -6,7 +6,7 @@ stages:
 
 .playwright_job:
   stage: test
-  image:  mcr.microsoft.com/playwright:v1.37.0-jammy
+  image: node:latest
   when: manual
   script:
     - npm ci
@@ -22,7 +22,7 @@ gui-test-all:
 
 gui-test:
   stage: test
-  image:  mcr.microsoft.com/playwright:v1.37.0-jammy
+  image: node:latest
   only:
     - master
   script: 
