@@ -27,7 +27,7 @@ gui-test:
     - master
   script:
     - npm ci
-    - npx playwright install          
+    #- npx playwright install          
     - npx playwright test tests/specs --project=stage
   #artifacts:
   #  expire_in: 30 days
