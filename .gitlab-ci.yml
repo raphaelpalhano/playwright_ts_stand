@@ -1,7 +1,6 @@
 
 stages:
   - test
-  - build
 
 
 .playwright_job:
@@ -22,7 +21,7 @@ gui-test-all:
 
 gui-test:
   stage: test
-  image: mcr.microsoft.com/playwright:v1.20.0-focal 
+  image: mcr.microsoft.com/playwright:v1.37.0-jammy 
   only:
     - master
   script:
