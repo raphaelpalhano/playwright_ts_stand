@@ -10,7 +10,7 @@ stages:
   when: manual
   script:
     - npm install
-    #- npx playwright install          
+    - npx playwright install          
     - npx playwright test tests/specs$TEST_FILE --project=stage
 
 
@@ -22,11 +22,11 @@ gui-test-all:
 
 gui-test:
   stage: test
-  image: node:latest #mcr.microsoft.com/playwright:v1.20.0-focal 
+  image: mcr.microsoft.com/playwright:v1.20.0-focal 
   only:
     - master
   script:
-    - npm install
+    #- npm install
     - npx playwright install          
     - npx playwright test tests/specs --project=stage
   #artifacts:
