@@ -16,6 +16,7 @@ export default defineConfig({
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
+  
   /* Retry on CI only */
 
   //headless
@@ -64,7 +65,10 @@ export default defineConfig({
       use: { 
         ...devices['Desktop Chrome'],
         baseURL: 'https://demo.playwright.dev',
-        trace: 'on-all-retries'
+        trace: 'on-all-retries',
+        launchOptions: {
+          args: ['--disable-dev-shm-usage']
+        }
       },
       
       retries: 2,

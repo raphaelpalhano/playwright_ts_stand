@@ -28,11 +28,11 @@ gui-test:
     - npm ci
     - npx playwright install          
     - npx playwright test tests/specs --project=stage
-  #artifacts:
-  #  expire_in: 30 days
-  #  when: always
-  #  paths:
-  #    - reports
+  artifacts:
+    expire_in: 30 days
+    when: always
+    paths:
+      - reports
 
 
 

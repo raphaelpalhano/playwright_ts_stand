@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1,
-      "totalTime": 38964.09700000286
+      "totalTime": 18963.348999999464
     },
     "preserveOutput": "always",
     "reporter": [
@@ -114,12 +114,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 17417,
+                      "duration": 15627,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-09-11T16:22:34.311Z",
+                      "startTime": "2023-09-11T16:42:40.251Z",
                       "attachments": []
                     }
                   ],
