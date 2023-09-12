@@ -22,12 +22,12 @@ gui-test-all:
 
 gui-test:
   stage: test
-  image: mcr.microsoft.com/playwright:v1.20.0-focal #node:latest
+  image: node:latest #mcr.microsoft.com/playwright:v1.20.0-focal 
   only:
     - master
   script:
     - npm install
-    #- npx playwright install          
+    - npx playwright install          
     - npx playwright test tests/specs --project=stage
   #artifacts:
   #  expire_in: 30 days
