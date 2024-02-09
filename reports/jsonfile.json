@@ -1,10 +1,10 @@
 {
   "config": {
-    "configFile": "C:\\Users\\rapha\\projects\\playwright-stander-ts\\playwright.config.ts",
-    "rootDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
+    "configFile": "C:\\Users\\rapha\\workspace\\playwright_ts_stand\\playwright.config.ts",
+    "rootDir": "C:/Users/rapha/workspace/playwright_ts_stand/src/specs",
     "forbidOnly": false,
     "fullyParallel": true,
-    "globalSetup": null,
+    "globalSetup": "C:\\Users\\rapha\\workspace\\playwright_ts_stand\\src\\hooks\\global.setup.ts",
     "globalTeardown": null,
     "globalTimeout": 0,
     "grep": {},
@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1,
-      "totalTime": 18963.348999999464
+      "totalTime": 6343.690999999642
     },
     "preserveOutput": "always",
     "reporter": [
@@ -40,38 +40,12 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/rapha/projects/playwright-stander-ts/test-results",
-        "repeatEach": 1,
-        "retries": 2,
-        "id": "stage",
-        "name": "stage",
-        "testDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
-        "testIgnore": [],
-        "testMatch": [
-          "/.*\\.spec\\.ts/"
-        ],
-        "timeout": 20000
-      },
-      {
-        "outputDir": "C:/Users/rapha/projects/playwright-stander-ts/test-results",
+        "outputDir": "C:/Users/rapha/workspace/playwright_ts_stand/test-results",
         "repeatEach": 1,
         "retries": 1,
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
-        "testIgnore": [],
-        "testMatch": [
-          "/.*\\.spec\\.ts/"
-        ],
-        "timeout": 20000
-      },
-      {
-        "outputDir": "C:/Users/rapha/projects/playwright-stander-ts/test-results",
-        "repeatEach": 1,
-        "retries": 1,
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "C:/Users/rapha/projects/playwright-stander-ts/tests/specs",
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/rapha/workspace/playwright_ts_stand/src/specs",
         "testIgnore": [],
         "testMatch": [
           "/.*\\.spec\\.ts/"
@@ -96,7 +70,7 @@
         {
           "title": "Access Account",
           "file": "barriga-react.spec.ts",
-          "line": 15,
+          "line": 13,
           "column": 6,
           "specs": [
             {
@@ -108,27 +82,27 @@
                   "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "stage",
-                  "projectName": "stage",
+                  "projectId": "",
+                  "projectName": "",
                   "results": [
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 15627,
+                      "duration": 5331,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-09-11T16:42:40.251Z",
+                      "startTime": "2024-02-09T03:07:35.217Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "c73466809e95db72f5c8-55e36145c5f2878b5065",
+              "id": "c73466809e95db72f5c8-dd642576aa1d35c80715",
               "file": "barriga-react.spec.ts",
-              "line": 17,
+              "line": 15,
               "column": 7
             }
           ]

@@ -10,7 +10,7 @@ require('dotenv').config();
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './tests/specs',
+  testDir: './src/specs',
   testMatch: /.*\.spec\.ts/,
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -32,13 +32,16 @@ export default defineConfig({
     ['html', {outputFile: 'reports/'}]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  
+  use: {
+    baseURL: process.env.BASE_URL
+    
+  },
 
   //timeout
   timeout: 20000,
 
   // path to the global setup files.
-  //globalSetup: 'tests/hooks/global.setup.ts',
+  globalSetup: './src/hooks/global.setup.ts',
 
   // path to the global teardown files.
   //globalTeardown: require.resolve('./tests/hooks/global-teardown'),
@@ -60,7 +63,7 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
+    /*{
       name: 'stage',
       use: { 
         ...devices['Desktop Chrome'],
@@ -82,7 +85,11 @@ export default defineConfig({
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
-    },
+    },*/
+
+    {
+
+    }
 
     /* Test against mobile viewports. */
     // {
